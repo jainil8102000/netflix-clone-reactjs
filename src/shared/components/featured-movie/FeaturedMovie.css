@@ -1,0 +1,131 @@
+.featured {
+  height: 100vh;
+  background-size: "cover";
+  background-position: "center";
+}
+
+.featured-vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured-horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 30%, transparent 70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  padding-left: 30px;
+}
+
+.featured-name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featured-info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.featured-points,
+.featured-year,
+.featured-seasons {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.featured-points {
+  color: #46d369;
+}
+
+.featured-overview {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
+}
+
+.featured-buttons {
+  margin-top: 15px;
+}
+
+.featured-watch-button,
+.featured-add-button {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 25px;
+  margin-right: 10px;
+  opacity: 1;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  -moz-transition: all ease 0.2s;
+  -ms-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+}
+
+.featured-watch-button:hover,
+.featured-add-button:hover {
+  opacity: 0.7;
+}
+
+.featured-watch-button {
+  background-color: #fff;
+  color: #000;
+}
+
+.featured-watch-button svg {
+  position: relative;
+  top: 3px;
+}
+
+.featured-add-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.featured-genres {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
+}
+
+@media (max-width: 760px) {
+  .featured {
+    height: 90vh;
+  }
+
+  .featured-name {
+    font-size: 40px;
+  }
+
+  .featured-info {
+    font-size: 16px;
+  }
+
+  .featured-overview {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+
+  .featured-watch-button,
+  .featured-add-button {
+    font-size: 16px;
+  }
+
+  .featured-genres {
+    font-size: 14px;
+  }
+}
